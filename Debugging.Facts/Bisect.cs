@@ -8,13 +8,19 @@ namespace Debugging
         [Fact]
         public void AFeatureThatIsWorking()
         {
-            false.Should().BeFalse();
+            false.Should().BeTrue();
         }
 
         [Fact]
         public void AddAnotherFeature()
         {
             1.Should().Be(1);
+        }
+
+        [Fact]
+        public void MoreFeatures()
+        {
+            "Hello World".Should().HaveLength(11);
         }
     }
 }
