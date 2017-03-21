@@ -7,7 +7,7 @@
     <ProjectGuid>{9C4AD4DE-5FC8-46A8-BB3D-35ADC70C3C6B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Debugging.Facts</RootNamespace>
+    <RootNamespace>Debugging</RootNamespace>
     <AssemblyName>Debugging.Facts</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,10 +64,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnalyseComplexData.cs" />
+    <Compile Include="Breakpoints.cs" />
+    <Compile Include="CSharp7.cs" />
+    <Compile Include="EveryDayHelpers.cs" />
+    <Compile Include="Linq.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="MultiThreading.cs" />
+    <Compile Include="Profiling.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Debugging\Debugging.csproj">
+      <Project>{0D59A052-0550-4860-B54C-5186DB2A47E2}</Project>
+      <Name>Debugging</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
