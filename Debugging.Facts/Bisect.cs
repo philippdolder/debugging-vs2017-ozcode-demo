@@ -8,7 +8,7 @@ namespace Debugging
         [Fact]
         public void AFeatureThatIsWorking()
         {
-            true.Should().BeTrue();
+            false.Should().BeFalse();
         }
     }
 }
