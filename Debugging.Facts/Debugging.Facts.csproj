@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnalyseComplexData.cs" />
+    <Compile Include="Bisect.cs" />
     <Compile Include="Breakpoints.cs" />
     <Compile Include="CSharp7.cs" />
     <Compile Include="EveryDayHelpers.cs" />
