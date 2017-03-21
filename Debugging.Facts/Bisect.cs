@@ -10,5 +10,11 @@ namespace Debugging
         {
             false.Should().BeFalse();
         }
+
+        [Fact]
+        public void AddAnotherFeature()
+        {
+            1.Should().Be(1);
+        }
     }
 }
